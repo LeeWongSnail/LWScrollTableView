@@ -1,23 +1,6 @@
 
-
----
-title: UITableView的嵌套
-date: 2016-08-27 19:27:52
-tags: [iOS,Demo,UITableView]
-toc: true
-categories: UI
-photos: 
-
----
-
+#### 0、前言	
 	前端时间公司的某一个模块中，需要用到这么一个效果，一个看似很简单的东西，当时直接用的第三方，现在把简单的东西抽出来，供大家参考。这不是一个第三方的，可以直接使用的库，我只是简单的讲述了我的思想，所以其中有一些东西的依赖比较重。大家只是参考一下就可以了
-
-<!--more-->
-
-#### 0、前言
-
-	
-
 
 #### 1、效果图
 ![2016082778727scrollTable.gif](http://7xqmjb.com1.z0.glb.clouddn.com/2016082778727scrollTable.gif)
