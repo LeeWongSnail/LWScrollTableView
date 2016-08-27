@@ -1,0 +1,23 @@
+//
+//  ArtScrollTable-Prefix.pch
+//  ArtScrollTableView
+//
+//  Created by LeeWong on 16/8/27.
+//  Copyright © 2016年 LeeWong. All rights reserved.
+//
+
+#ifndef ArtScrollTable_Prefix_pch
+#define ArtScrollTable_Prefix_pch
+
+#import <Masonry.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#define SCREEN_W  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H  [UIScreen mainScreen].bounds.size.height
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ArtScrollTable_Prefix_pch */

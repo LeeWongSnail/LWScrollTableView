@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26EFAC9B3F870545C16F7D96 /* libPods-ArtScrollTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A101363723C97E801A97A9 /* libPods-ArtScrollTableView.a */; };
+		EB18AAC01D7140D4004D99B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AABF1D7140D4004D99B6 /* main.m */; };
+		EB18AAC31D7140D4004D99B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAC21D7140D4004D99B6 /* AppDelegate.m */; };
+		EB18AAC91D7140D4004D99B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB18AAC71D7140D4004D99B6 /* Main.storyboard */; };
+		EB18AACB1D7140D4004D99B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB18AACA1D7140D4004D99B6 /* Assets.xcassets */; };
+		EB18AACE1D7140D4004D99B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB18AACC1D7140D4004D99B6 /* LaunchScreen.storyboard */; };
+		EB18AAD91D7140D4004D99B6 /* ArtScrollTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAD81D7140D4004D99B6 /* ArtScrollTableViewTests.m */; };
+		EB18AAE41D7140D4004D99B6 /* ArtScrollTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAE31D7140D4004D99B6 /* ArtScrollTableViewUITests.m */; };
+		EB18AAF31D71427D004D99B6 /* ArtMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAF21D71427D004D99B6 /* ArtMainTableViewController.m */; };
+		EB18AAFD1D714647004D99B6 /* ArtFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAF61D714647004D99B6 /* ArtFilterModel.m */; };
+		EB18AAFE1D714647004D99B6 /* ArtScrollTab.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAF81D714647004D99B6 /* ArtScrollTab.m */; };
+		EB18AAFF1D714647004D99B6 /* ArtWorkFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAFA1D714647004D99B6 /* ArtWorkFilterModel.m */; };
+		EB18AB0A1D716B34004D99B6 /* ArtSubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB091D716B34004D99B6 /* ArtSubTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB18AAD51D7140D4004D99B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB18AAB31D7140D4004D99B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB18AABA1D7140D4004D99B6;
+			remoteInfo = ArtScrollTableView;
+		};
+		EB18AAE01D7140D4004D99B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB18AAB31D7140D4004D99B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB18AABA1D7140D4004D99B6;
+			remoteInfo = ArtScrollTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48A101363723C97E801A97A9 /* libPods-ArtScrollTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtScrollTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55385D8DF3D171C9045BF28 /* Pods-ArtScrollTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtScrollTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView.release.xcconfig"; sourceTree = "<group>"; };
+		CEE67BFABF2270466BF85776 /* Pods-ArtScrollTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtScrollTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		EB18AABB1D7140D4004D99B6 /* ArtScrollTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtScrollTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB18AABF1D7140D4004D99B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB18AAC11D7140D4004D99B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB18AAC21D7140D4004D99B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB18AAC81D7140D4004D99B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB18AACA1D7140D4004D99B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB18AACD1D7140D4004D99B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB18AACF1D7140D4004D99B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB18AAD41D7140D4004D99B6 /* ArtScrollTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtScrollTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB18AAD81D7140D4004D99B6 /* ArtScrollTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtScrollTableViewTests.m; sourceTree = "<group>"; };
+		EB18AADA1D7140D4004D99B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB18AADF1D7140D4004D99B6 /* ArtScrollTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtScrollTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB18AAE31D7140D4004D99B6 /* ArtScrollTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtScrollTableViewUITests.m; sourceTree = "<group>"; };
+		EB18AAE51D7140D4004D99B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB18AAF11D71427D004D99B6 /* ArtMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtMainTableViewController.h; sourceTree = "<group>"; };
+		EB18AAF21D71427D004D99B6 /* ArtMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtMainTableViewController.m; sourceTree = "<group>"; };
+		EB18AAF51D714647004D99B6 /* ArtFilterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtFilterModel.h; sourceTree = "<group>"; };
+		EB18AAF61D714647004D99B6 /* ArtFilterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtFilterModel.m; sourceTree = "<group>"; };
+		EB18AAF71D714647004D99B6 /* ArtScrollTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtScrollTab.h; sourceTree = "<group>"; };
+		EB18AAF81D714647004D99B6 /* ArtScrollTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtScrollTab.m; sourceTree = "<group>"; };
+		EB18AAF91D714647004D99B6 /* ArtWorkFilterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtWorkFilterModel.h; sourceTree = "<group>"; };
+		EB18AAFA1D714647004D99B6 /* ArtWorkFilterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtWorkFilterModel.m; sourceTree = "<group>"; };
+		EB18AB011D71488E004D99B6 /* ArtScrollTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArtScrollTable-Prefix.pch"; sourceTree = "<group>"; };
+		EB18AB081D716B34004D99B6 /* ArtSubTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtSubTableViewController.h; sourceTree = "<group>"; };
+		EB18AB091D716B34004D99B6 /* ArtSubTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtSubTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB18AAB81D7140D4004D99B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EFAC9B3F870545C16F7D96 /* libPods-ArtScrollTableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB18AAD11D7140D4004D99B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB18AADC1D7140D4004D99B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		384BB45CD591525506814A96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEE67BFABF2270466BF85776 /* Pods-ArtScrollTableView.debug.xcconfig */,
+				A55385D8DF3D171C9045BF28 /* Pods-ArtScrollTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82F66E9A889F7C725473D69B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A101363723C97E801A97A9 /* libPods-ArtScrollTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB18AAB21D7140D4004D99B6 = {
+			isa = PBXGroup;
+			children = (
+				EB18AABD1D7140D4004D99B6 /* ArtScrollTableView */,
+				EB18AAD71D7140D4004D99B6 /* ArtScrollTableViewTests */,
+				EB18AAE21D7140D4004D99B6 /* ArtScrollTableViewUITests */,
+				EB18AABC1D7140D4004D99B6 /* Products */,
+				384BB45CD591525506814A96 /* Pods */,
+				82F66E9A889F7C725473D69B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB18AABC1D7140D4004D99B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB18AABB1D7140D4004D99B6 /* ArtScrollTableView.app */,
+				EB18AAD41D7140D4004D99B6 /* ArtScrollTableViewTests.xctest */,
+				EB18AADF1D7140D4004D99B6 /* ArtScrollTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB18AABD1D7140D4004D99B6 /* ArtScrollTableView */ = {
+			isa = PBXGroup;
+			children = (
+				EB18AAF41D714647004D99B6 /* LiveFrame */,
+				EB18AAC11D7140D4004D99B6 /* AppDelegate.h */,
+				EB18AAC21D7140D4004D99B6 /* AppDelegate.m */,
+				EB18AABE1D7140D4004D99B6 /* Supporting Files */,
+				EB18AAF11D71427D004D99B6 /* ArtMainTableViewController.h */,
+				EB18AAF21D71427D004D99B6 /* ArtMainTableViewController.m */,
+				EB18AB081D716B34004D99B6 /* ArtSubTableViewController.h */,
+				EB18AB091D716B34004D99B6 /* ArtSubTableViewController.m */,
+			);
+			path = ArtScrollTableView;
+			sourceTree = "<group>";
+		};
+		EB18AABE1D7140D4004D99B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB18AAC71D7140D4004D99B6 /* Main.storyboard */,
+				EB18AACA1D7140D4004D99B6 /* Assets.xcassets */,
+				EB18AACC1D7140D4004D99B6 /* LaunchScreen.storyboard */,
+				EB18AACF1D7140D4004D99B6 /* Info.plist */,
+				EB18AABF1D7140D4004D99B6 /* main.m */,
+				EB18AB011D71488E004D99B6 /* ArtScrollTable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB18AAD71D7140D4004D99B6 /* ArtScrollTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB18AAD81D7140D4004D99B6 /* ArtScrollTableViewTests.m */,
+				EB18AADA1D7140D4004D99B6 /* Info.plist */,
+			);
+			path = ArtScrollTableViewTests;
+			sourceTree = "<group>";
+		};
+		EB18AAE21D7140D4004D99B6 /* ArtScrollTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB18AAE31D7140D4004D99B6 /* ArtScrollTableViewUITests.m */,
+				EB18AAE51D7140D4004D99B6 /* Info.plist */,
+			);
+			path = ArtScrollTableViewUITests;
+			sourceTree = "<group>";
+		};
+		EB18AAF41D714647004D99B6 /* LiveFrame */ = {
+			isa = PBXGroup;
+			children = (
+				EB18AAF51D714647004D99B6 /* ArtFilterModel.h */,
+				EB18AAF61D714647004D99B6 /* ArtFilterModel.m */,
+				EB18AAF71D714647004D99B6 /* ArtScrollTab.h */,
+				EB18AAF81D714647004D99B6 /* ArtScrollTab.m */,
+				EB18AAF91D714647004D99B6 /* ArtWorkFilterModel.h */,
+				EB18AAFA1D714647004D99B6 /* ArtWorkFilterModel.m */,
+			);
+			path = LiveFrame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB18AABA1D7140D4004D99B6 /* ArtScrollTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB18AAE81D7140D4004D99B6 /* Build configuration list for PBXNativeTarget "ArtScrollTableView" */;
+			buildPhases = (
+				53E4CAA3C85671C8A2735C69 /* Check Pods Manifest.lock */,
+				EB18AAB71D7140D4004D99B6 /* Sources */,
+				EB18AAB81D7140D4004D99B6 /* Frameworks */,
+				EB18AAB91D7140D4004D99B6 /* Resources */,
+				F11DE38C5830798CE6DACC31 /* Embed Pods Frameworks */,
+				08D3A32924CE370F27D64265 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtScrollTableView;
+			productName = ArtScrollTableView;
+			productReference = EB18AABB1D7140D4004D99B6 /* ArtScrollTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB18AAD31D7140D4004D99B6 /* ArtScrollTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB18AAEB1D7140D4004D99B6 /* Build configuration list for PBXNativeTarget "ArtScrollTableViewTests" */;
+			buildPhases = (
+				EB18AAD01D7140D4004D99B6 /* Sources */,
+				EB18AAD11D7140D4004D99B6 /* Frameworks */,
+				EB18AAD21D7140D4004D99B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB18AAD61D7140D4004D99B6 /* PBXTargetDependency */,
+			);
+			name = ArtScrollTableViewTests;
+			productName = ArtScrollTableViewTests;
+			productReference = EB18AAD41D7140D4004D99B6 /* ArtScrollTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB18AADE1D7140D4004D99B6 /* ArtScrollTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB18AAEE1D7140D4004D99B6 /* Build configuration list for PBXNativeTarget "ArtScrollTableViewUITests" */;
+			buildPhases = (
+				EB18AADB1D7140D4004D99B6 /* Sources */,
+				EB18AADC1D7140D4004D99B6 /* Frameworks */,
+				EB18AADD1D7140D4004D99B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB18AAE11D7140D4004D99B6 /* PBXTargetDependency */,
+			);
+			name = ArtScrollTableViewUITests;
+			productName = ArtScrollTableViewUITests;
+			productReference = EB18AADF1D7140D4004D99B6 /* ArtScrollTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB18AAB31D7140D4004D99B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LeeWong;
+				TargetAttributes = {
+					EB18AABA1D7140D4004D99B6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EB18AAD31D7140D4004D99B6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EB18AABA1D7140D4004D99B6;
+					};
+					EB18AADE1D7140D4004D99B6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EB18AABA1D7140D4004D99B6;
+					};
+				};
+			};
+			buildConfigurationList = EB18AAB61D7140D4004D99B6 /* Build configuration list for PBXProject "ArtScrollTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB18AAB21D7140D4004D99B6;
+			productRefGroup = EB18AABC1D7140D4004D99B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB18AABA1D7140D4004D99B6 /* ArtScrollTableView */,
+				EB18AAD31D7140D4004D99B6 /* ArtScrollTableViewTests */,
+				EB18AADE1D7140D4004D99B6 /* ArtScrollTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB18AAB91D7140D4004D99B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB18AACE1D7140D4004D99B6 /* LaunchScreen.storyboard in Resources */,
+				EB18AACB1D7140D4004D99B6 /* Assets.xcassets in Resources */,
+				EB18AAC91D7140D4004D99B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB18AAD21D7140D4004D99B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB18AADD1D7140D4004D99B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D3A32924CE370F27D64265 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53E4CAA3C85671C8A2735C69 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F11DE38C5830798CE6DACC31 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB18AAB71D7140D4004D99B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB18AAF31D71427D004D99B6 /* ArtMainTableViewController.m in Sources */,
+				EB18AAFD1D714647004D99B6 /* ArtFilterModel.m in Sources */,
+				EB18AAC31D7140D4004D99B6 /* AppDelegate.m in Sources */,
+				EB18AAC01D7140D4004D99B6 /* main.m in Sources */,
+				EB18AAFF1D714647004D99B6 /* ArtWorkFilterModel.m in Sources */,
+				EB18AB0A1D716B34004D99B6 /* ArtSubTableViewController.m in Sources */,
+				EB18AAFE1D714647004D99B6 /* ArtScrollTab.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB18AAD01D7140D4004D99B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB18AAD91D7140D4004D99B6 /* ArtScrollTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB18AADB1D7140D4004D99B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB18AAE41D7140D4004D99B6 /* ArtScrollTableViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB18AAD61D7140D4004D99B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB18AABA1D7140D4004D99B6 /* ArtScrollTableView */;
+			targetProxy = EB18AAD51D7140D4004D99B6 /* PBXContainerItemProxy */;
+		};
+		EB18AAE11D7140D4004D99B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB18AABA1D7140D4004D99B6 /* ArtScrollTableView */;
+			targetProxy = EB18AAE01D7140D4004D99B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB18AAC71D7140D4004D99B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB18AAC81D7140D4004D99B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB18AACC1D7140D4004D99B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB18AACD1D7140D4004D99B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB18AAE61D7140D4004D99B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB18AAE71D7140D4004D99B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB18AAE91D7140D4004D99B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE67BFABF2270466BF85776 /* Pods-ArtScrollTableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ArtScrollTableView/ArtScrollTable-Prefix.pch";
+				INFOPLIST_FILE = ArtScrollTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ArtScrollTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB18AAEA1D7140D4004D99B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55385D8DF3D171C9045BF28 /* Pods-ArtScrollTableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ArtScrollTableView/ArtScrollTable-Prefix.pch";
+				INFOPLIST_FILE = ArtScrollTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ArtScrollTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB18AAEC1D7140D4004D99B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArtScrollTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ArtScrollTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtScrollTableView.app/ArtScrollTableView";
+			};
+			name = Debug;
+		};
+		EB18AAED1D7140D4004D99B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArtScrollTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ArtScrollTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtScrollTableView.app/ArtScrollTableView";
+			};
+			name = Release;
+		};
+		EB18AAEF1D7140D4004D99B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArtScrollTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ArtScrollTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArtScrollTableView;
+			};
+			name = Debug;
+		};
+		EB18AAF01D7140D4004D99B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArtScrollTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ArtScrollTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArtScrollTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB18AAB61D7140D4004D99B6 /* Build configuration list for PBXProject "ArtScrollTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB18AAE61D7140D4004D99B6 /* Debug */,
+				EB18AAE71D7140D4004D99B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB18AAE81D7140D4004D99B6 /* Build configuration list for PBXNativeTarget "ArtScrollTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB18AAE91D7140D4004D99B6 /* Debug */,
+				EB18AAEA1D7140D4004D99B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB18AAEB1D7140D4004D99B6 /* Build configuration list for PBXNativeTarget "ArtScrollTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB18AAEC1D7140D4004D99B6 /* Debug */,
+				EB18AAED1D7140D4004D99B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB18AAEE1D7140D4004D99B6 /* Build configuration list for PBXNativeTarget "ArtScrollTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB18AAEF1D7140D4004D99B6 /* Debug */,
+				EB18AAF01D7140D4004D99B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB18AAB31D7140D4004D99B6 /* Project object */;
+}
