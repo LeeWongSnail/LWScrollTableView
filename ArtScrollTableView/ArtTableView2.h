@@ -1,13 +1,13 @@
 //
-//  ArtMainTableViewController.h
+//  ArtTableView2.h
 //  ArtScrollTableView
 //
 //  Created by LeeWong on 16/8/27.
 //  Copyright © 2016年 LeeWong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ArtTableView.h"
 
-@interface ArtMainTableViewController : UIViewController
+@interface ArtTableView2 : ArtTableView
 
 @end

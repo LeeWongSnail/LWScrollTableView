@@ -20,6 +20,9 @@
 		EB18AAFE1D714647004D99B6 /* ArtScrollTab.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAF81D714647004D99B6 /* ArtScrollTab.m */; };
 		EB18AAFF1D714647004D99B6 /* ArtWorkFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAFA1D714647004D99B6 /* ArtWorkFilterModel.m */; };
 		EB18AB0A1D716B34004D99B6 /* ArtSubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB091D716B34004D99B6 /* ArtSubTableViewController.m */; };
+		EB18AB101D7193D8004D99B6 /* ArtTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB0F1D7193D8004D99B6 /* ArtTableView.m */; };
+		EB18AB131D719615004D99B6 /* ArtTableView2.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB121D719615004D99B6 /* ArtTableView2.m */; };
+		EB18AB161D7197CC004D99B6 /* ArtSubViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB151D7197CC004D99B6 /* ArtSubViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,12 @@
 		EB18AB011D71488E004D99B6 /* ArtScrollTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArtScrollTable-Prefix.pch"; sourceTree = "<group>"; };
 		EB18AB081D716B34004D99B6 /* ArtSubTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtSubTableViewController.h; sourceTree = "<group>"; };
 		EB18AB091D716B34004D99B6 /* ArtSubTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtSubTableViewController.m; sourceTree = "<group>"; };
+		EB18AB0E1D7193D8004D99B6 /* ArtTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtTableView.h; sourceTree = "<group>"; };
+		EB18AB0F1D7193D8004D99B6 /* ArtTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtTableView.m; sourceTree = "<group>"; };
+		EB18AB111D719615004D99B6 /* ArtTableView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtTableView2.h; path = ../ArtTableView2.h; sourceTree = "<group>"; };
+		EB18AB121D719615004D99B6 /* ArtTableView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtTableView2.m; path = ../ArtTableView2.m; sourceTree = "<group>"; };
+		EB18AB141D7197CC004D99B6 /* ArtSubViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtSubViewCell.h; sourceTree = "<group>"; };
+		EB18AB151D7197CC004D99B6 /* ArtSubViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtSubViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +199,12 @@
 				EB18AAF81D714647004D99B6 /* ArtScrollTab.m */,
 				EB18AAF91D714647004D99B6 /* ArtWorkFilterModel.h */,
 				EB18AAFA1D714647004D99B6 /* ArtWorkFilterModel.m */,
+				EB18AB0E1D7193D8004D99B6 /* ArtTableView.h */,
+				EB18AB0F1D7193D8004D99B6 /* ArtTableView.m */,
+				EB18AB111D719615004D99B6 /* ArtTableView2.h */,
+				EB18AB121D719615004D99B6 /* ArtTableView2.m */,
+				EB18AB141D7197CC004D99B6 /* ArtSubViewCell.h */,
+				EB18AB151D7197CC004D99B6 /* ArtSubViewCell.m */,
 			);
 			path = LiveFrame;
 			sourceTree = "<group>";
@@ -378,9 +393,12 @@
 				EB18AAF31D71427D004D99B6 /* ArtMainTableViewController.m in Sources */,
 				EB18AAFD1D714647004D99B6 /* ArtFilterModel.m in Sources */,
 				EB18AAC31D7140D4004D99B6 /* AppDelegate.m in Sources */,
+				EB18AB161D7197CC004D99B6 /* ArtSubViewCell.m in Sources */,
+				EB18AB101D7193D8004D99B6 /* ArtTableView.m in Sources */,
 				EB18AAC01D7140D4004D99B6 /* main.m in Sources */,
 				EB18AAFF1D714647004D99B6 /* ArtWorkFilterModel.m in Sources */,
 				EB18AB0A1D716B34004D99B6 /* ArtSubTableViewController.m in Sources */,
+				EB18AB131D719615004D99B6 /* ArtTableView2.m in Sources */,
 				EB18AAFE1D714647004D99B6 /* ArtScrollTab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

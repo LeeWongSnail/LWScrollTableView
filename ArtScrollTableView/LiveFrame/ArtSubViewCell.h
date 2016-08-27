@@ -1,5 +1,5 @@
 //
-//  ArtSubTableViewController.h
+//  ArtSubViewCell.h
 //  ArtScrollTableView
 //
 //  Created by LeeWong on 16/8/27.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ArtSubTableViewController : UIViewController
-@property (nonatomic, assign) BOOL canScroll;
+@interface ArtSubViewCell : UIViewController
+
 @end
