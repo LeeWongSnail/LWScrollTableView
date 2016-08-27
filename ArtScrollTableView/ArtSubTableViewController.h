@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ArtSubTableViewController : UITableViewController
-
+@property (nonatomic, assign) BOOL canScroll;
 @end

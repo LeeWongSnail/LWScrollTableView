@@ -11,7 +11,7 @@
 #import "ArtWorkFilterModel.h"
 #import "ArtScrollTab.h"
 
-@interface ArtMainTableViewController () <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+@interface ArtMainTableViewController () <UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIPageViewController* pageViewController;
 @property (nonatomic, strong) ArtScrollTab* scrollTab;
@@ -19,9 +19,26 @@
 @property (nonatomic, assign) BOOL pageDoingScroll;
 @property (nonatomic, assign) BOOL isCurrentPage;
 
+@property (nonatomic, assign) BOOL isTopIsCanNotMoveTabView;
+
+@property (nonatomic, assign) BOOL isTopIsCanNotMoveTabViewPre;
+
+@property (nonatomic, assign) BOOL canScroll;
+
 @end
 
 @implementation ArtMainTableViewController
+
+-(void)acceptMsg : (NSNotification *)notification{
+    //NSLog(@"%@",notification);
+    NSDictionary *userInfo = notification.userInfo;
+    NSString *canScroll = userInfo[@"canScroll"];
+    if ([canScroll isEqualToString:@"1"]) {
+        _canScroll = YES;
+        self.tableView.scrollEnabled = YES;
+    }
+}
+
 
 - (void)buildMainView
 {
@@ -107,11 +124,18 @@
     
     self.workFilterModel = [ArtWorkFilterModel shared];
     [self buildMainView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kLeaveTopNotificationName object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - Table view data source
@@ -217,6 +241,39 @@
         self.scrollTab.currentIndex = idx;
         
         [self.workFilterModel removeMoreCachedViewController:idx];
+    }
+}
+
+#pragma mark - UISCrollviewDelegate
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat tabOffsetY = [self.tableView rectForSection:2].origin.y;
+    CGFloat offsetY = scrollView.contentOffset.y + 64;
+    NSLog(@"offsetY ----- %f",offsetY);
+    NSLog(@"tabOffsetY ----- %f",tabOffsetY);
+    _isTopIsCanNotMoveTabViewPre = _isTopIsCanNotMoveTabView;
+    
+    if (offsetY>=tabOffsetY) {
+        scrollView.contentOffset = CGPointMake(0, tabOffsetY);
+        _isTopIsCanNotMoveTabView = YES;
+    }else{
+        _isTopIsCanNotMoveTabView = NO;
+    }
+    
+    if (_isTopIsCanNotMoveTabView != _isTopIsCanNotMoveTabViewPre) {
+        if (!_isTopIsCanNotMoveTabViewPre && _isTopIsCanNotMoveTabView) {
+            //NSLog(@"滑动到顶端");
+            [[NSNotificationCenter defaultCenter] postNotificationName:kGoTopNotificationName object:nil userInfo:@{@"canScroll":@"1"}];
+            _canScroll = NO;
+            self.tableView.scrollEnabled = NO;
+        }
+        if(_isTopIsCanNotMoveTabViewPre && !_isTopIsCanNotMoveTabView){
+            //NSLog(@"离开顶端");
+            if (!_canScroll) {
+                scrollView.contentOffset = CGPointMake(0, tabOffsetY);
+            }
+            self.tableView.scrollEnabled = YES;
+        }
     }
 }
 @end

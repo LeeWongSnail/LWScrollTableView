@@ -182,7 +182,7 @@ static CGFloat const kIndicatorBottomMargin = 0.;
 #pragma mark - Construct
 - (CGFloat)itemControlLimitWidth
 {
-    return SCREEN_W - self.moreControlWidth;
+    return SCREEN_WIDTH - self.moreControlWidth;
 }
 
 - (CGFloat)moreControlWidth
