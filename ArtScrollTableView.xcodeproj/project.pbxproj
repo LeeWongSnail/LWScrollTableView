@@ -23,6 +23,7 @@
 		EB18AB101D7193D8004D99B6 /* ArtTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB0F1D7193D8004D99B6 /* ArtTableView.m */; };
 		EB18AB131D719615004D99B6 /* ArtTableView2.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB121D719615004D99B6 /* ArtTableView2.m */; };
 		EB18AB161D7197CC004D99B6 /* ArtSubViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AB151D7197CC004D99B6 /* ArtSubViewCell.m */; };
+		EB2D36A31D8168B500430C1A /* ArtThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2D36A21D8168B500430C1A /* ArtThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		EB18AB121D719615004D99B6 /* ArtTableView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtTableView2.m; path = ../ArtTableView2.m; sourceTree = "<group>"; };
 		EB18AB141D7197CC004D99B6 /* ArtSubViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtSubViewCell.h; sourceTree = "<group>"; };
 		EB18AB151D7197CC004D99B6 /* ArtSubViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtSubViewCell.m; sourceTree = "<group>"; };
+		EB2D36A11D8168B500430C1A /* ArtThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtThirdViewController.h; sourceTree = "<group>"; };
+		EB2D36A21D8168B500430C1A /* ArtThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				EB18AAF21D71427D004D99B6 /* ArtMainTableViewController.m */,
 				EB18AB081D716B34004D99B6 /* ArtSubTableViewController.h */,
 				EB18AB091D716B34004D99B6 /* ArtSubTableViewController.m */,
+				EB2D36A11D8168B500430C1A /* ArtThirdViewController.h */,
+				EB2D36A21D8168B500430C1A /* ArtThirdViewController.m */,
 			);
 			path = ArtScrollTableView;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 				EB18AAF31D71427D004D99B6 /* ArtMainTableViewController.m in Sources */,
 				EB18AAFD1D714647004D99B6 /* ArtFilterModel.m in Sources */,
 				EB18AAC31D7140D4004D99B6 /* AppDelegate.m in Sources */,
+				EB2D36A31D8168B500430C1A /* ArtThirdViewController.m in Sources */,
 				EB18AB161D7197CC004D99B6 /* ArtSubViewCell.m in Sources */,
 				EB18AB101D7193D8004D99B6 /* ArtTableView.m in Sources */,
 				EB18AAC01D7140D4004D99B6 /* main.m in Sources */,

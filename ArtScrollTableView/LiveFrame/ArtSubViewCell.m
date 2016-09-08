@@ -8,6 +8,7 @@
 
 #import "ArtSubViewCell.h"
 #import "ArtSubTableViewController.h"
+#import "ArtThirdViewController.h"
 #import "ArtWorkFilterModel.h"
 #import "ArtScrollTab.h"
 
@@ -27,6 +28,7 @@
 {
     [super viewDidLoad];
     self.workFilterModel = [ArtWorkFilterModel shared];
+    [self.workFilterModel setCategoryList:@[@{@"name":@"关注",@"_id":@"1"}, @{@"name":@"热门",@"_id":@"2"}, @{@"name":@"最新",@"_id":@"3"}]];
     [self buildMainView];
 }
 
@@ -54,10 +56,16 @@
     }];
     
     //    WEAKSELF(weakSelf);
+    //这里的info对应的为上面设置的workFilterModel中的categorylist
     [self.workFilterModel setContentViewController:^UIViewController *(NSDictionary *info) {
-        ArtSubTableViewController *controller = [[ArtSubTableViewController alloc] init];
-        controller.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255. green:arc4random_uniform(255)/255. blue:arc4random_uniform(255)/255. alpha:1.];
-        return controller;
+        if ([info[@"_id"] isEqualToString:@"2"]) {
+            ArtThirdViewController *third = [[ArtThirdViewController alloc] init];
+            return third;
+        } else {
+            ArtSubTableViewController *controller = [[ArtSubTableViewController alloc] init];
+            controller.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255. green:arc4random_uniform(255)/255. blue:arc4random_uniform(255)/255. alpha:1.];
+            return controller;
+        }
     }];
     
     @weakify(self)

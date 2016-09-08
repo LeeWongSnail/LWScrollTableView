@@ -48,8 +48,6 @@ static NSString* const kFilterTypeProvince = @"省份";
 {
     self = [super initWithType:@"1"];
     if (self) {
-        self.categoryList = @[@{@"name":@"关注",@"_id":@"1"}, @{@"name":@"热门",@"_id":@"2"}, @{@"name":@"最新",@"_id":@"3"}];
-        self.sortNameList = [self getNamesFromContents:self.sortList];
         self.filterOptionCache = [NSMutableDictionary dictionary];
     }
     return self;
