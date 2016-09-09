@@ -98,7 +98,7 @@
         }
     }];
     
-    RAC(self.workFilterModel, categoryListIndex) = RACObserve(self.scrollTab, currentIndex);
+    RAC(self.workFilterModel, categoryListIndex) = [RACObserve(self.scrollTab, currentIndex) takeUntil:[self rac_signalForSelector:@selector(viewWillDisappear:)]];
     
     
     
