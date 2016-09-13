@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ArtSubViewCell : UIViewController
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 @end

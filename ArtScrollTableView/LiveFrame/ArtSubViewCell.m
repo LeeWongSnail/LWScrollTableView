@@ -55,15 +55,17 @@
         make.right.equalTo(self.view.mas_right);
     }];
     
-    //    WEAKSELF(weakSelf);
+    WEAKSELF(weakSelf);
     //这里的info对应的为上面设置的workFilterModel中的categorylist
     [self.workFilterModel setContentViewController:^UIViewController *(NSDictionary *info) {
         if ([info[@"_id"] isEqualToString:@"2"]) {
             ArtThirdViewController *third = [[ArtThirdViewController alloc] init];
+            third.navigationController = weakSelf.navigationController;
             return third;
         } else {
             ArtSubTableViewController *controller = [[ArtSubTableViewController alloc] init];
             controller.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255. green:arc4random_uniform(255)/255. blue:arc4random_uniform(255)/255. alpha:1.];
+            controller.navigationController = weakSelf.navigationController;
             return controller;
         }
     }];

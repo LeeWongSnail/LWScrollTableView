@@ -82,6 +82,7 @@
     
     if (indexPath.section == 2) {
         ArtSubViewCell *subCell = [[ArtSubViewCell alloc] init];
+        subCell.navigationController = self.navigationController;
         [cell.contentView addSubview:subCell.view];
         [subCell.view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(cell.contentView);

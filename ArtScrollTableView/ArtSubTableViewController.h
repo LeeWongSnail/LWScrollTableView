@@ -10,4 +10,5 @@
 
 @interface ArtSubTableViewController : UIViewController
 @property (nonatomic, assign) BOOL canScroll;
+@property (nonatomic, strong) UINavigationController *navigationController;
 @end

@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ArtScrollTableView/ArtMainTableViewController.m"
-            timestampString = "495107999.66169"
+            filePath = "ArtScrollTableView/LiveFrame/ArtSubViewCell.m"
+            timestampString = "495430632.894094"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-buildMainView"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

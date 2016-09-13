@@ -18,6 +18,7 @@ static NSString *const kLeaveTopNotificationName = @"leaveTop";//离开置顶命
 #define SCREEN_WIDTH    [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
 
+#define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 
 // Include any system framework and library headers here that should be included in all compilation units.
