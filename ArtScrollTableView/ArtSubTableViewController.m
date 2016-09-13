@@ -94,6 +94,11 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"click");
+}
+
 - (UITableView *)tableView
 {
     if (_tableView == nil) {
