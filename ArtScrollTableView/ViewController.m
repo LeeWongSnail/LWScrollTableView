@@ -20,7 +20,7 @@
 
 - (void)buildUI {
 
-    self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height + 120);
+    self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height + 80);
     self.topView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 150);
     self.tableVc.view.frame = CGRectMake(0, 150, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     self.canScroll = YES;
@@ -47,11 +47,11 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (!self.canScroll) {
-        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 120)];
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 80)];
         return;
     }
-    if (scrollView.contentOffset.y >= 120) {
-        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 120)];
+    if (scrollView.contentOffset.y >= 80) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 80)];
         // 通知其他页面滚动
         [[NSNotificationCenter defaultCenter] postNotificationName:kTopGotoTopNotificationName object:nil userInfo:@{@"canScroll":@"1"}];
         _canScroll = NO;
@@ -63,6 +63,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self buildUI];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 
