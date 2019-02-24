@@ -1,56 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5gC-To-NBQ">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nUS-8J-jPt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Uk1-MU-O0g">
-            <objects>
-                <tabBarController id="5gC-To-NBQ" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="RGV-SL-5Vc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="vd7-hU-GmL" kind="relationship" relationship="viewControllers" id="C0K-JZ-4Br"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oia-UO-nlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2711" y="-190"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="UbE-0T-HJJ">
-            <objects>
-                <navigationController id="vd7-hU-GmL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bco-Qn-QWb"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O5B-9G-Clq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="nUS-8J-jPt" kind="relationship" relationship="rootViewController" id="Wiz-C5-gs8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nCq-L5-Y3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1988" y="-216"/>
-        </scene>
-        <!--Art Main Table View Controller-->
+        <!--View Controller-->
         <scene sceneID="bes-ZQ-XJP">
             <objects>
-                <viewController id="nUS-8J-jPt" customClass="ArtMainTableViewController" sceneMemberID="viewController">
+                <viewController id="nUS-8J-jPt" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hzR-7h-0yS"/>
                         <viewControllerLayoutGuide type="bottom" id="dzL-U7-oHj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cy0-J7-CdK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="TOP-Tz-ClJ"/>
                 </viewController>

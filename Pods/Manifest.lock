@@ -12,8 +12,15 @@ DEPENDENCIES:
   - Masonry (= 1.0.1)
   - ReactiveCocoa (~> 2.4.7)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - ReactiveCocoa
+
 SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 95d05e7d49172d553888aa148cb739d13c3fa5b5
+
+COCOAPODS: 1.5.3

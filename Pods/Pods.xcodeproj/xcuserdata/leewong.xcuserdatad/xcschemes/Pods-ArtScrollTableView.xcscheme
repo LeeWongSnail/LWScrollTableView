@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FC80CF4FF1C7967F3C6EE739'
-               BlueprintName = 'Pods-ArtScrollTableView'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-ArtScrollTableView.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "61485FFE4AE6EFDC7D669628216FA4B4"
+               BlueprintName = "Pods-ArtScrollTableView"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libPods-ArtScrollTableView.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

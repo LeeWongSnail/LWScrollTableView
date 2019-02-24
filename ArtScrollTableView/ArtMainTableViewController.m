@@ -20,16 +20,33 @@
 
 @property (nonatomic, assign) BOOL canScroll;
 
+@property (nonatomic, assign) CGPoint fixOffset;
+
 @end
 
 @implementation ArtMainTableViewController
 
 -(void)acceptMsg : (NSNotification *)notification{
     //NSLog(@"%@",notification);
-    NSDictionary *userInfo = notification.userInfo;
-    NSString *canScroll = userInfo[@"canScroll"];
-    if ([canScroll isEqualToString:@"1"]) {
-        _canScroll = YES;
+    if ([notification.name isEqualToString: kLeaveTopNotificationName]) {
+        NSDictionary *userInfo = notification.userInfo;
+        NSString *canScroll = userInfo[@"canScroll"];
+        if ([canScroll isEqualToString:@"1"]) {
+            _canScroll = YES;
+        }
+    } else if ([notification.name isEqualToString:kGoTopNotificationName]) {
+        NSDictionary *userInfo = notification.userInfo;
+        NSString *canScroll = userInfo[@"canScroll"];
+    } else if ([notification.name isEqualToString:kTopLeaveTopNotificationName]) {
+        self.fixOffset = CGPointZero;
+        self.canScroll = NO;
+    }
+    else {
+        NSDictionary *userInfo = notification.userInfo;
+        NSString *canScroll = userInfo[@"canScroll"];
+        if ([canScroll isEqualToString:@"1"]) {
+            _canScroll = YES;
+        }
     }
 }
 
@@ -40,8 +57,14 @@
         make.edges.equalTo(self.view);
     }];
     [self.tableView reloadData];
+    self.tableView.showsVerticalScrollIndicator = NO;
+
+    self.fixOffset = CGPointZero;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kLeaveTopNotificationName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kTopGotoTopNotificationName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kGoTopNotificationName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kTopLeaveTopNotificationName object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,7 +124,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 2) {
-        return CGRectGetHeight(self.view.frame)-64-49;;
+        return CGRectGetHeight(self.view.frame);;
     }
     return 44;
 }
@@ -110,7 +133,11 @@
 #pragma mark - UISCrollviewDelegate
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    CGFloat tabOffsetY = [_tableView rectForSection:2].origin.y-64;
+    if (!self.canScroll) {
+        [scrollView setContentOffset:self.fixOffset];
+        return;
+    }
+    CGFloat tabOffsetY = [_tableView rectForSection:2].origin.y;
     CGFloat offsetY = scrollView.contentOffset.y;
     NSLog(@"offsetY ----- %f",offsetY);
     NSLog(@"tabOffsetY ----- %f",tabOffsetY);
@@ -128,6 +155,7 @@
             //NSLog(@"滑动到顶端");
             [[NSNotificationCenter defaultCenter] postNotificationName:kGoTopNotificationName object:nil userInfo:@{@"canScroll":@"1"}];
             _canScroll = NO;
+            self.fixOffset = scrollView.contentOffset;
         }
         if(_isTopIsCanNotMoveTabViewPre && !_isTopIsCanNotMoveTabView){
             //NSLog(@"离开顶端");
@@ -135,6 +163,11 @@
                 scrollView.contentOffset = CGPointMake(0, tabOffsetY);
             }
         }
+    }
+
+    NSLog(@"-------%@",@(offsetY));
+    if (self.canScroll && offsetY < 5) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:kTopLeaveTopNotificationName object:nil userInfo:@{@"canScroll":@"1"}];
     }
 }
 

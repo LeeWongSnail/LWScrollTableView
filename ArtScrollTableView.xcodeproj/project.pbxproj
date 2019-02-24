@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26EFAC9B3F870545C16F7D96 /* libPods-ArtScrollTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A101363723C97E801A97A9 /* libPods-ArtScrollTableView.a */; };
+		50653B68221AE27A0039439E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50653B67221AE27A0039439E /* ViewController.m */; };
+		50653B6B221AE75E0039439E /* ArtScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50653B6A221AE75E0039439E /* ArtScrollView.m */; };
+		882D42E1590D75D2C0564D23 /* libPods-ArtScrollTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CD65012598687D5A6D871D /* libPods-ArtScrollTableView.a */; };
 		EB18AAC01D7140D4004D99B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AABF1D7140D4004D99B6 /* main.m */; };
 		EB18AAC31D7140D4004D99B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18AAC21D7140D4004D99B6 /* AppDelegate.m */; };
 		EB18AAC91D7140D4004D99B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB18AAC71D7140D4004D99B6 /* Main.storyboard */; };
@@ -44,9 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		48A101363723C97E801A97A9 /* libPods-ArtScrollTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtScrollTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A55385D8DF3D171C9045BF28 /* Pods-ArtScrollTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtScrollTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView.release.xcconfig"; sourceTree = "<group>"; };
-		CEE67BFABF2270466BF85776 /* Pods-ArtScrollTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtScrollTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		24F9E1610A058125EB201702 /* Pods-ArtScrollTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtScrollTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView.release.xcconfig"; sourceTree = "<group>"; };
+		50653B66221AE27A0039439E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		50653B67221AE27A0039439E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		50653B69221AE75E0039439E /* ArtScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtScrollView.h; sourceTree = "<group>"; };
+		50653B6A221AE75E0039439E /* ArtScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtScrollView.m; sourceTree = "<group>"; };
+		A9CD65012598687D5A6D871D /* libPods-ArtScrollTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtScrollTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB18AABB1D7140D4004D99B6 /* ArtScrollTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtScrollTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB18AABF1D7140D4004D99B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB18AAC11D7140D4004D99B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		EB18AB151D7197CC004D99B6 /* ArtSubViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtSubViewCell.m; sourceTree = "<group>"; };
 		EB2D36A11D8168B500430C1A /* ArtThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtThirdViewController.h; sourceTree = "<group>"; };
 		EB2D36A21D8168B500430C1A /* ArtThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtThirdViewController.m; sourceTree = "<group>"; };
+		F2678E800906266982B0D352 /* Pods-ArtScrollTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtScrollTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26EFAC9B3F870545C16F7D96 /* libPods-ArtScrollTableView.a in Frameworks */,
+				882D42E1590D75D2C0564D23 /* libPods-ArtScrollTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,21 +114,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		384BB45CD591525506814A96 /* Pods */ = {
+		C6171A18B629E503B7D9FB27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEE67BFABF2270466BF85776 /* Pods-ArtScrollTableView.debug.xcconfig */,
-				A55385D8DF3D171C9045BF28 /* Pods-ArtScrollTableView.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		82F66E9A889F7C725473D69B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48A101363723C97E801A97A9 /* libPods-ArtScrollTableView.a */,
+				A9CD65012598687D5A6D871D /* libPods-ArtScrollTableView.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6E977857952528FE0315B67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2678E800906266982B0D352 /* Pods-ArtScrollTableView.debug.xcconfig */,
+				24F9E1610A058125EB201702 /* Pods-ArtScrollTableView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		EB18AAB21D7140D4004D99B6 = {
@@ -132,8 +138,8 @@
 				EB18AAD71D7140D4004D99B6 /* ArtScrollTableViewTests */,
 				EB18AAE21D7140D4004D99B6 /* ArtScrollTableViewUITests */,
 				EB18AABC1D7140D4004D99B6 /* Products */,
-				384BB45CD591525506814A96 /* Pods */,
-				82F66E9A889F7C725473D69B /* Frameworks */,
+				C6E977857952528FE0315B67 /* Pods */,
+				C6171A18B629E503B7D9FB27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +166,8 @@
 				EB18AB091D716B34004D99B6 /* ArtSubTableViewController.m */,
 				EB2D36A11D8168B500430C1A /* ArtThirdViewController.h */,
 				EB2D36A21D8168B500430C1A /* ArtThirdViewController.m */,
+				50653B66221AE27A0039439E /* ViewController.h */,
+				50653B67221AE27A0039439E /* ViewController.m */,
 			);
 			path = ArtScrollTableView;
 			sourceTree = "<group>";
@@ -210,6 +218,8 @@
 				EB18AB121D719615004D99B6 /* ArtTableView2.m */,
 				EB18AB141D7197CC004D99B6 /* ArtSubViewCell.h */,
 				EB18AB151D7197CC004D99B6 /* ArtSubViewCell.m */,
+				50653B69221AE75E0039439E /* ArtScrollView.h */,
+				50653B6A221AE75E0039439E /* ArtScrollView.m */,
 			);
 			path = LiveFrame;
 			sourceTree = "<group>";
@@ -221,12 +231,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB18AAE81D7140D4004D99B6 /* Build configuration list for PBXNativeTarget "ArtScrollTableView" */;
 			buildPhases = (
-				53E4CAA3C85671C8A2735C69 /* Check Pods Manifest.lock */,
+				DE00F6310E6A07619EECFAD2 /* [CP] Check Pods Manifest.lock */,
 				EB18AAB71D7140D4004D99B6 /* Sources */,
 				EB18AAB81D7140D4004D99B6 /* Frameworks */,
 				EB18AAB91D7140D4004D99B6 /* Resources */,
-				F11DE38C5830798CE6DACC31 /* Embed Pods Frameworks */,
-				08D3A32924CE370F27D64265 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,7 +292,7 @@
 				TargetAttributes = {
 					EB18AABA1D7140D4004D99B6 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = XWNPFKK4U5;
+						DevelopmentTeam = V49S5C2LVD;
 					};
 					EB18AAD31D7140D4004D99B6 = {
 						CreatedOnToolsVersion = 7.3;
@@ -344,49 +352,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08D3A32924CE370F27D64265 /* Copy Pods Resources */ = {
+		DE00F6310E6A07619EECFAD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtScrollTableView-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53E4CAA3C85671C8A2735C69 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F11DE38C5830798CE6DACC31 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArtScrollTableView/Pods-ArtScrollTableView-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -401,7 +382,9 @@
 				EB18AAC31D7140D4004D99B6 /* AppDelegate.m in Sources */,
 				EB2D36A31D8168B500430C1A /* ArtThirdViewController.m in Sources */,
 				EB18AB161D7197CC004D99B6 /* ArtSubViewCell.m in Sources */,
+				50653B6B221AE75E0039439E /* ArtScrollView.m in Sources */,
 				EB18AB101D7193D8004D99B6 /* ArtTableView.m in Sources */,
+				50653B68221AE27A0039439E /* ViewController.m in Sources */,
 				EB18AAC01D7140D4004D99B6 /* main.m in Sources */,
 				EB18AAFF1D714647004D99B6 /* ArtWorkFilterModel.m in Sources */,
 				EB18AB0A1D716B34004D99B6 /* ArtSubTableViewController.m in Sources */,
@@ -545,10 +528,10 @@
 		};
 		EB18AAE91D7140D4004D99B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEE67BFABF2270466BF85776 /* Pods-ArtScrollTableView.debug.xcconfig */;
+			baseConfigurationReference = F2678E800906266982B0D352 /* Pods-ArtScrollTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				DEVELOPMENT_TEAM = V49S5C2LVD;
 				GCC_PREFIX_HEADER = "ArtScrollTableView/ArtScrollTable-Prefix.pch";
 				INFOPLIST_FILE = ArtScrollTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -559,10 +542,10 @@
 		};
 		EB18AAEA1D7140D4004D99B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A55385D8DF3D171C9045BF28 /* Pods-ArtScrollTableView.release.xcconfig */;
+			baseConfigurationReference = 24F9E1610A058125EB201702 /* Pods-ArtScrollTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				DEVELOPMENT_TEAM = V49S5C2LVD;
 				GCC_PREFIX_HEADER = "ArtScrollTableView/ArtScrollTable-Prefix.pch";
 				INFOPLIST_FILE = ArtScrollTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

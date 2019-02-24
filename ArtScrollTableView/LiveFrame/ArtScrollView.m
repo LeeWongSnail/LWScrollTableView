@@ -1,14 +1,14 @@
 //
-//  ArtTableView2.m
+//  ArtScrollView.m
 //  ArtScrollTableView
 //
-//  Created by LeeWong on 16/8/27.
-//  Copyright © 2016年 LeeWong. All rights reserved.
+//  Created by LeeWong on 2019/2/18.
+//  Copyright © 2019年 LeeWong. All rights reserved.
 //
 
-#import "ArtTableView2.h"
+#import "ArtScrollView.h"
 
-@implementation ArtTableView2
+@implementation ArtScrollView
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     return YES;

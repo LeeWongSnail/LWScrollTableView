@@ -39,6 +39,9 @@
         self.tableView.contentOffset = CGPointZero;
         self.canScroll = NO;
         self.tableView.showsVerticalScrollIndicator = NO;
+    } else if ([notificationName isEqualToString:kTopLeaveTopNotificationName]) {
+        self.canScroll = NO;
+        self.tableView.contentOffset = CGPointZero;
     }
 }
 
@@ -58,7 +61,8 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"subCell"];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kGoTopNotificationName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kLeaveTopNotificationName object:nil];//其中一个TAB离开顶部的时候，如果其他几个偏移量不为0的时候，要把他们都置为0
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(acceptMsg:) name:kTopLeaveTopNotificationName object:nil];
+
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
