@@ -4,7 +4,8 @@
 
 废话不多说 先看下UI要求的效果
     
-![video](/Users/leewong/Desktop/多级滚动视图.mov)
+![效果图](https://ws2.sinaimg.cn/large/006tKfTcly1g0hwl9gmv1g305k09vnpd.gif)
+
 
 ### 1、层次拆分
 
